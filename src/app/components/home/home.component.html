@@ -1,0 +1,70 @@
+<div class="background">
+  <div class="nav">
+    <div class="logo">
+    <h2>BookingApp</h2>
+    </div>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <input type="text"placeholder="Search">
+    <button>Search</button>
+  </div>
+  <div class="main">
+
+    <div class="main-nav">
+        <ul>
+            <li><a (click)="special('Hotel')">Hotel</a></li>
+            <li><a (click)="special('Flight')">Flight</a></li>
+            <li><a (click)="special('Car')">Car</a></li>
+          </ul>
+    </div>
+      <div class="main-sec">
+        <h5>Personal Information</h5>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="E-mail">
+        <input type="number" placeholder="Age">
+        <input type="text" placeholder="Cell Number">
+        <div class="gender"> 
+          <label>Gander</label><br>
+          <input type="checkbox">Male
+          <input type="checkbox">Female
+        </div>
+      </div>
+      
+  </div>
+  <div class="main-footer" *ngIf="Special==1">
+    <h5>Book Specials</h5>
+    <div class="deals" style="color: #F4D03F ">
+      <img src="https://i.ytimg.com/vi/S3WToPw3iSc/maxresdefault.jpg" width="150" height="150"> <a> Moriteus</a>
+      <img src="https://travel.amerikanki.com/wp-content/uploads/2013/11/Best-Airport-Hotels-in-the-World.jpg" width="150" height="150">Dubai
+      <img src="https://skift.com/wp-content/uploads/2013/10/fourseasonshonkongbestbusiness1.jpeg" width="150" height="150">Victoria Fall
+      <img src="https://www.staysure.co.uk/wp-content/uploads/2016/08/Best-Hotel-1.jpg" width="150" height="150">Amsterdam
+      <img src="https://www.total-croatia-news.com/media/k2/items/cache/aae1fe1ff3a298796dc2fab1574bbc72_XL.jpg" width="150" height="150">Miami
+
+    </div>
+  </div>
+  <div class="main-footer" *ngIf="Special==2">
+    <h5>Book Specials</h5>
+    <div class="deals">
+     <a href=""><img src="https://i.ytimg.com/vi/rO9uoc65LMU/maxresdefault.jpg" width="150" height="150"></a> 
+      <img src="http://www.hopper.com/cms-assets/images/hopperblog/Qatar-shutterstock_177588866.jpg" width="150" height="150">
+      <img src="https://www.afr.com/content/dam/images/g/y/1/p/4/2/image.imgtype.afrArticleInline.620x0.png/1505287447923.jpg" width="150" height="150">
+      <img src="http://i617.photobucket.com/albums/tt254/viewfromthewing/SQNew777BusinessSep2013/IMG_1802_zps055d57eb.jpg" width="150" height="150">
+      <img src="https://www.telegraph.co.uk/content/dam/advertiser-content/qantas/qantas-a380-flying-over-sydney.jpg?imwidth=450" width="150" height="150">
+  </div>
+  </div>
+    <div class="main-footer" *ngIf="Special==3">
+      <h5>Book Specials</h5>
+      <div class="deals">
+        <img src="https://i.ytimg.com/vi/NourwjfkJOM/maxresdefault.jpg" width="150" height="150">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1LLpQMJGeYcUdo5d2kpDvhJDIKjta3ngkHcfo2YQJZhgiJWB4" width="150" height="150">
+        <img src="http://2.bp.blogspot.com/-WSKIPpZC-LE/Tl_dSjVKrlI/AAAAAAAABC8/F_-wnMSP85Y/s1600/the%2Bbest%2Bcar%2Bin%2Bthe%2Bworld-3.jpg" width="150" height="150">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkU2ydpu_LB_Fyv0vVmNNNBgHU04B9VBMldS5n3SFxGVSfvnS72w" width="150" height="150">
+        <img src="http://iloboyou.com/wp-content/uploads/2015/05/Best-gold-cars-ever-limited-edition-world-i-lobo-you3.jpg" width="150" height="150">
+  
+      </div>
+    </div>
+</div>

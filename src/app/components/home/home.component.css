@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Oswald|Wendy+One');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+.background{
+    background: url('https://s.tmimgcdn.com/blog/wp-content/uploads/2017/06/motorcycles.jpg?x54449');
+    background-size: cover;
+    height: 780px;
+    border: 1px solid white;
+}
+.nav{
+    background: rgba(0, 0, 0, .5);
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: minmax(50px,auto);
+    border-radius: 10px;
+    margin: 0.5em;
+    margin-top: 20px;   
+}.nav input{
+    grid-column: 7/8;
+    margin: 0.5em;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+.nav button{
+    margin: 0.5em;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.nav h2{
+    font-family: 'Wendy One', sans-serif;
+    color:  #F4D03F; 
+}
+.nav ul{
+    list-style-type: none;
+    padding-top: 12px;
+}
+.nav ul li{
+    display: inline;
+    font-family: 'Concert One', cursive;
+    padding-right: 25px;
+    padding-left: 25px; 
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+}
+.nav ul li a{
+    color: white; 
+    padding: 5px 15px 5px 15px;
+}
+.nav ul li a:hover{
+    background: white;
+    color: #5DADE2;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+}
+.main{
+ background: rgba(0, 0, 0, .5);
+ display: grid;
+ grid-template-columns: 30% 60%;
+ margin: 0.5em;
+ border-radius: 5px;
+ margin-top: 30px; 
+ grid-gap: 20px;
+}
+.main-nav{
+    margin-top: 50px;
+    margin-right: 50px;
+    border: 2px solid #5DADE2;
+    margin: 0.5em;
+    border-radius: 5px;
+
+}
+.main-nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 20px 20px 0 0;
+}
+.main-nav ul li{
+  padding-bottom: 30px;
+  font-family: 'Concert One', cursive;
+}
+.main-nav ul li a{
+    color: #F4D03F;
+    padding: 10px;
+    padding-right:150px;
+    padding-left: 150px;
+}
+.main-nav ul li a:hover{
+   background: rgba(0, 0, 0, .5);
+   border-radius: 5px;
+}
+.main-sec h5{
+    font-family: 'Nunito', sans-serif;
+    grid-column: 1/3;
+    color: #5DADE2;
+}
+.main-sec{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;  
+    padding-bottom: 40px;
+}
+.main-sec input{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    border:none;
+}
+.main-sec .gender{
+    color: #5DADE2;
+    font-family: 'Nunito', sans-serif;
+}
+.main-footer{
+    background: rgba(0, 0, 0, .5);
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    margin: 0.5em;
+    padding-bottom: 10px;
+
+}
+.main-footer .deals a{
+    animation: 2s anim linear;
+    padding-bottom: 40px;
+}
+@keyframes anim{
+    50%{
+        transform: translateY(40px)
+    }
+}
+.main-footer h5{
+    color: #5DADE2;
+}
+.main-footer img{
+    border-radius: 50px;
+    margin-right: 20px;
+    animation: 2s animate linear;
+    transition-duration: 2s;
+}
+.main-footer img:hover{ 
+    transform: scale(1.1)
+}
+@keyframes animate{
+    50%{
+        transform: rotate(360deg)
+    }
+}

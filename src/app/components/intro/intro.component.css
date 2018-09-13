@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Oswald|Wendy+One');
+.background{
+ background: url('https://responsiv.co.uk/wp-content/uploads/2016/02/coffee-apple-iphone-desk.jpg');
+    height: 780px;
+    background-size: cover;
+    border: 1px solid white;
+}
+.welcome h5{
+    margin: 30px 0 0 0;
+    font-family: 'Nunito', sans-serif;
+}
+.welcome h1{
+    margin: 350px 0 0 0;
+    font-family: 'Wendy One', sans-serif;
+    font-size: 35pt;
+    color: #F4D03F;
+    animation: 2s animate linear;
+}
+@keyframes animate{
+    50%{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+}
+.welcome span{
+    color: #5DADE2;
+}
+.welcome input{
+    margin: 30px 0 0 0;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    border: none;
+    width: 13%;
+    background: white;
+}
+.welcome button{
+    background: #F4D03F;
+    font-family: 'Oswald', sans-serif;
+    width: 12%;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+}
+.welcome button:hover{
+    color: black;
+}
